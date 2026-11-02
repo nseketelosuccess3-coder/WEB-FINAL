@@ -1,0 +1,4 @@
+﻿User-agent: *
+Allow: /
+
+Sitemap: https://leafy-paletas-68fef8.netlify.app/sitemap.xml

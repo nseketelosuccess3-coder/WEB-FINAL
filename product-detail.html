@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banana Cake R280 - Jo's Bakery Rosebank 0181</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div style="background:#f8c8d0; padding:15px;">
+    <a href="product.html">← Back to All Products</a> - Jo's Bakery Rosebank 0181
+  </div>
+
+  <main>
+    <section style="padding:20px;">
+      <div style="border:2px solid #c49a3c; padding:10px; border-radius:8px; max-width:600px;">
+        <!-- FIXED: images/bananacake.webp -->
+        <img src="images/bananacake.webp" 
+             alt="Banana cake whole at Jo's Bakery 123 Main Road Rosebank Pretoria 0181 - R280 - Gogo recipe from 1970 - Moist with walnuts - EST 2019"
+             style="width:100%; height:auto; display:block;">
+        <p style="text-align:center; margin-top:8px;">Banana cake whole at Jo's Bakery 123 Main Road Rosebank Pretoria 0181 - R280 - Gogo recipe from 1970 - Moist with walnuts - EST 2019</p>
+      </div>
+
+      <div style="display:flex; gap:10px; margin-top:15px;">
+        <img src="images/bananacake.webp" alt="Banana cake slice R30 Jo's Bakery Rosebank 0181" style="width:80px; height:80px; object-fit:cover; border:2px solid #8b3a50; cursor:pointer;" onclick="document.querySelector('section img').src=this.src">
+        <img src="images/freshBread.webp" alt="Fresh bread R25 Jo's Bakery Rosebank 0181" style="width:80px; height:80px; object-fit:cover; border:1px solid #ccc; cursor:pointer;" onclick="document.querySelector('section img').src=this.src">
+        <img src="images/cookies.webp" alt="Cookies R15 Jo's Bakery Rosebank 0181" style="width:80px; height:80px; object-fit:cover; border:1px solid #ccc; cursor:pointer;" onclick="document.querySelector('section img').src=this.src">
+      </div>
+      <p style="font-size:12px;">Click image to enlarge - Gallery lightbox</p>
+
+      <h2>Banana Cake - R280 Whole | R30 Slice</h2>
+      <p><strong>Jo's Bakery 123 Main Road Rosebank 0181 - Blue door 8a - Phone 012 345 6789 - -25.993,28.112</strong></p>
+      <p>Gogo recipe from 1970 - Moist with walnuts - EST 2019 - Baked 3am daily</p>
+      <button onclick="addToCart('Banana Cake Whole', 280)">Add to Cart - R280</button>
+    </section>
+  </main>
+
+  <script src="js/cart.js" defer></script>
+</body>
+</html>

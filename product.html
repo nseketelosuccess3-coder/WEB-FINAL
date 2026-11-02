@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Products - Jo's Bakery 123 Main Road Rosebank 0181 - Cakes R250-R650 Banana R280 Bread R25</title>
+  <meta name="description" content="Jo's Bakery 123 Main Road Rosebank Pretoria 0181 - Cakes Small R250 Medium R450 Large R650 Banana Cake R280 Sliced R30 Cupcakes R20 Box 6 R110 Bread White Brown R25 baked 3am Pies R35 Family R120 Cookies R15 Box R80 - Blue door 8a - EST 2019 - Phone 012 345 6789 - Coordinates -25.993,28.112">
+  <meta name="keywords" content="Jo's Bakery Rosebank 0181 products, cakes R250 R450 R650 Rosebank, banana cake R280 Rosebank, bread R25 Rosebank, cupcakes R20, pies R35, 123 Main Road Rosebank, blue door 8a, -25.993 28.112">
+  <link rel="canonical" href="https://jos-bakery-rosebank-0181.netlify.app/services.html">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .product-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:20px;}
+    .product-card{border:1px solid #ddd;padding:15px;border-radius:8px;background:#fff;}
+    .product-card img{width:100%;height:180px;object-fit:cover;border-radius:5px;}
+    .product-card button{padding:8px 15px;background:#8b3a50;color:white;border:none;border-radius:5px;cursor:pointer;margin-right:5px;}
+    .product-card a{padding:8px 12px;background:#c49a3c;color:white;text-decoration:none;border-radius:5px;display:inline-block;}
+    #product-search{width:90%;max-width:400px;padding:10px;border:1px solid #ccc;border-radius:5px;margin:10px 20px;}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header>
+    <div style="padding:20px;">
+    <h1>Jo's Bakery - 123 Main Road Rosebank 0181 - Blue door 8a - EST 2019</h1>
+    <p>Freshly Baked Goodness Every Day - Blue door 8a Rosebank - 5 min walk Rosebank College - Coordinates -25.993,28.112 - Phone 012 345 6789</p>
+    <nav>
+      <ul style="display:flex;gap:15px;list-style:none;flex-wrap:wrap;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" aria-current="page"><b>Our Products</b></a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="enquiries.html">Enquiries</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section style="padding:20px;">
+      <h2>Our Products - 123 Main Road Rosebank 0181 - Blue door 8a</h2>
+      <p>Cakes Small R250 Medium R450 Large R650 | Banana R280 Sliced R30 | Cupcakes R20 Box 6 R110 | Bread R25 baked 3am daily sold out 10am | Pies R35 Family R120 | Cookies R15 Box R80 | Blue door 8a - 5 min Rosebank College - White building opposite Shell garage - EST 2019</p>
+      <input type="search" id="product-search" placeholder="Search products - e.g. Banana R280, Cake R250, Bread R25...">
+      <p id="searchMessage" aria-live="polite" style="padding:10px;"></p>
+    </section>
+
+    <section class="product-container">
+      <article class="product-card" data-name="Banana Cake R280" data-price="280">
+        <img src="images/bananacake.webp" alt="Jo's Bakery 123 Main Road Rosebank Pretoria 0181 - Banana cake whole R280 sliced R30 - Gogo recipe from 1970 - Moist with walnuts - Blue door 8a - EST 2019 - Coordinates -25.993,28.112" loading="lazy">
+        <h3>Banana Cake - Whole R280 | Slice R30</h3>
+        <p>Whole R280 | Sliced R30 - Famous - Gogo recipe 1970 - Best seller - Moist with walnuts</p>
+        <button onclick="addToCart('Banana Cake Whole', 280)">Add to Cart R280</button>
+        <a href="product-detail.html">View Details</a>
+      </article>
+
+      <article class="product-card" data-name="Cakes R250 R450 R650" data-price="450">
+        <img src="images/cake.webp" alt="Jo's Bakery 123 Main Road Rosebank 0181 - Cakes Small R250 Medium R450 Large R650 - Chocolate Vanilla Red Velvet - Birthday Wedding Custom - Blue door 8a - EST 2019 - -25.993,28.112" loading="lazy">
+        <h3>Cakes - Small R250 Medium R450 Large R650</h3>
+        <p>Birthday wedding custom - 2 days notice - Chocolate vanilla red velvet - EST 2019</p>
+        <button onclick="addToCart('Cake Medium', 450)">Add to Cart R450</button>
+        <a href="product-detail.html">View Details</a>
+      </article>
+
+      <article class="product-card" data-name="Cupcakes R20" data-price="20">
+        <img src="images/cupcakes.webp" alt="Jo's Bakery 123 Main Road Rosebank 0181 - Cupcakes R20 Each Box 6 R110 - Vanilla Chocolate Red Velvet - Butter icing - Blue door 8a - EST 2019" loading="lazy">
+        <h3>Cupcakes - R20 Each | Box 6 R110</h3>
+        <p>Vanilla chocolate red velvet - Butter icing - Fresh daily</p>
+        <button onclick="addToCart('Cupcakes Box 6', 110)">Add to Cart R110</button>
+        <a href="product-detail.html">View Details</a>
+      </article>
+
+      <article class="product-card" data-name="Bread R25" data-price="25">
+        <img src="images/freshBread.webp" alt="Jo's Bakery 123 Main Road Rosebank 0181 - Bread White Brown R25 Wholewheat R30 baked 3am daily sold out 10am - Blue door 8a - EST 2019 - Coordinates -25.993,28.112" loading="lazy">
+        <h3>Bread - White/Brown R25 - Baked 3am</h3>
+        <p>White Brown R25 Wholewheat R30 per loaf - Baked 3am daily sold out by 10am - EST 2019</p>
+        <button onclick="addToCart('Bread Brown', 25)">Add to Cart R25</button>
+        <a href="product-detail.html">View Details</a>
+      </article>
+
+      <article class="product-card" data-name="Pies R35 Family R120" data-price="35">
+        <img src="images/pies.webp" alt="Jo's Bakery 123 Main Road Rosebank 0181 - Pies R35 Each Family R120 - Chicken Beef Vegetable - Flaky pastry hot - Blue door 8a - EST 2019" loading="lazy">
+        <h3>Pies - R35 Each | Family R120</h3>
+        <p>Chicken beef vegetable - Flaky pastry hot - Savoury - Baked fresh</p>
+        <button onclick="addToCart('Pie Chicken', 35)">Add to Cart R35</button>
+        <a href="product-detail.html">View Details</a>
+      </article>
+
+      <article class="product-card" data-name="Cookies R15" data-price="15">
+        <img src="images/cookies.webp" alt="Jo's Bakery 123 Main Road Rosebank 0181 - Cookies R15 Each Box R80 - Chocolate chip oatmeal shortbread - Homemade - Blue door 8a - EST 2019" loading="lazy">
+        <h3>Cookies - R15 Each | Box R80</h3>
+        <p>Chocolate chip oatmeal shortbread - Homemade - Box R80 - Fresh</p>
+        <button onclick="addToCart('Cookies Box', 80)">Add to Cart R80</button>
+        <a href="product-detail.html">View Details</a>
+      </article>
+    </section>
+  </main>
+
+  <footer style="padding:20px; text-align:center; border-top:1px solid #ccc; margin-top:20px;">
+    <p>&copy; 2026 Jo's Bakery 123 Main Road Rosebank 0181 Blue door 8a EST 2019 Phone 012 345 6789 | Cakes R250-R650 Banana R280 Bread R25 | <a href="sitemap.xml">Sitemap</a> | <a href="robots.txt">Robots</a></p>
+    <p><a href="index.html">Home</a> | <a href="services.html">Our Products</a> | <a href="about.html">About</a> | <a href="enquiries.html">Enquiries</a> | <a href="contact.html">Contact</a> | <a href="cart.html">Cart</a></p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>
